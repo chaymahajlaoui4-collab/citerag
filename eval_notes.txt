@@ -1,0 +1,16 @@
+question | fichier attendu | fichier n°1 trouvé | dans le top 3 ? | réponse OK ?
+Qu'est-ce qu'un cluster dans Camunda ? | clusters.md | clusters.md | oui | oui
+Quelle est la différence entre un message et un signal ? | signals.md + messages.md | signals.md | oui (les deux) | oui, avec tableau et 2 sources
+Comment fonctionne le multi-tenancy ? | multi-tenancy.md | multi-tenancy.md | oui | oui, mais très long (6 puces)
+Quel est le prix de Camunda ? | (aucun, hors sujet) | concepts-overview.md | n/a | oui (a répondu "Je ne sais pas")
+Comment installer Camunda sur Kubernetes avec Helm ? | (aucun, absent du corpus) | projects.md | n/a | oui (a répondu "Je ne sais pas")
+
+NOTES
+- Le retrieval fonctionne : le bon fichier est n°1 sur 3 questions sur 3 (hors la question hors sujet).
+- Bruit : sur la question cluster, variables.md remonte en n°2 alors qu'il est sans rapport.
+- Distances très proches (0.15 à 0.21) : difficile de séparer bon et mauvais résultat. Seuil de refus à calibrer au jour 4.
+- Question multi-tenancy : 4 chunks sur 5 viennent du même fichier, donc peu de diversité. Piste : augmenter K ou limiter les chunks par fichier.
+- Réponses parfois trop longues : à ajuster dans le prompt de ask.py.
+- Hors sujet : refus correct.
+- Format des sources inconsistant ([clusters.md, p.1] / [source: signals.md, p.1] / [ multi-tenancy.md, p.1 ]) : à normaliser dans le prompt.
+- Hors sujet proche (Helm/Kubernetes) : refus correct, mais distances 0.147-0.158 identiques à une bonne question : un seuil de distance seul ne suffit pas.
