@@ -3,3 +3,5 @@ chromadb
 sentence-transformers
 groq
 python-dotenv
+fastapi
+streamlit
