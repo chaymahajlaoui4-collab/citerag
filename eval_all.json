@@ -1,0 +1,103 @@
+[
+ {
+  "question": "Qu'est-ce qu'un cluster dans Camunda ?",
+  "expected": "clusters.md"
+ },
+ {
+  "question": "Quelle est la différence entre un message et un signal ?",
+  "expected": [
+   "signals.md",
+   "messages.md"
+  ]
+ },
+ {
+  "question": "Comment fonctionne le multi-tenancy ?",
+  "expected": "multi-tenancy.md"
+ },
+ {
+  "question": "Comment fonctionne un job worker ?",
+  "expected": "job-workers.md"
+ },
+ {
+  "question": "Qu'est-ce qu'un incident ?",
+  "expected": "incidents.md"
+ },
+ {
+  "question": "Comment migrer une instance de processus ?",
+  "expected": "process-instance-migration.md"
+ },
+ {
+  "question": "Comment suspendre une instance de processus ?",
+  "expected": "process-instance-suspension.md"
+ },
+ {
+  "question": "Que sont les variables dans Camunda ?",
+  "expected": "variables.md"
+ },
+ {
+  "question": "Quel est le prix de Camunda ?",
+  "expected": null
+ },
+ {
+  "question": "Comment installer Camunda sur Kubernetes avec Helm ?",
+  "expected": null
+ },
+ {
+  "question": "Quelle est la longueur maximale d'un identifiant de tenant ?",
+  "expected": "multi-tenancy.md"
+ },
+ {
+  "question": "Quel tenant est utilisé quand aucun autre n'est défini ?",
+  "expected": "multi-tenancy.md"
+ },
+ {
+  "question": "Un signal est-il envoyé à toutes les partitions du cluster ?",
+  "expected": "signals.md"
+ },
+ {
+  "question": "À quoi sert la clé de corrélation d'un message ?",
+  "expected": "messages.md"
+ },
+ {
+  "question": "Un message peut-il être conservé en attente avec une durée de vie ?",
+  "expected": "messages.md"
+ },
+ {
+  "question": "Qui crée et dimensionne un cluster dans Camunda Hub ?",
+  "expected": "clusters.md"
+ },
+ {
+  "question": "Où les secrets sont-ils résolus ?",
+  "expected": [
+   "secrets.md",
+   "secret-resolution.md"
+  ]
+ },
+ {
+  "question": "Comment supprimer plusieurs instances de processus en une seule fois ?",
+  "expected": [
+   "batch-operations.md",
+   "process-instance-deletion.md"
+  ]
+ },
+ {
+  "question": "Quand utiliser un execution listener ?",
+  "expected": "execution-listeners.md"
+ },
+ {
+  "question": "Peut-on modifier une instance de processus déjà en cours d'exécution ?",
+  "expected": "process-instance-modification.md"
+ },
+ {
+  "question": "Comment configurer Camunda 7 avec Spring Boot ?",
+  "expected": null
+ },
+ {
+  "question": "Comment sauvegarder et restaurer la base de données ?",
+  "expected": null
+ },
+ {
+  "question": "Quelle version de Java faut-il pour exécuter Camunda 8 ?",
+  "expected": null
+ }
+]
