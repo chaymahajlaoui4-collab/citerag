@@ -12,9 +12,14 @@ import config
 load_dotenv()
 
 SYSTEM_PROMPT = (
-    "You are a technical documentation assistant. Answer ONLY using the provided "
-    "context. Cite sources as [source, p.X]. If the answer is not in the context, "
-    "say you don't know. Reply in the same language as the question."
+    "You are a technical documentation assistant. Answer ONLY using facts that are "
+    "explicitly stated in the provided context. Do NOT use outside knowledge. "
+    "A link or a reference to another page is NOT an answer: if the context only "
+    "points to a page without explaining the content, say you don't know. "
+    "Cite every claim as [source, p.X]. If the context does not contain the answer, "
+    "reply exactly: \"Je ne sais pas : l'information n'est pas dans les documents.\" "
+    "(in the language of the question). Reply in the same language as the question."
+
 )
 
 _model = SentenceTransformer(config.EMBED_MODEL)
@@ -52,3 +57,4 @@ if __name__ == "__main__":
     print("\n--- Retrieved chunks (check these by hand) ---")
     for d, m, dist in hits:
         print(f"{m['source']} p.{m['page']} (distance {dist:.3f}): {d[:100]}...")
+
