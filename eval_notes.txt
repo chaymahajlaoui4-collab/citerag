@@ -14,3 +14,4 @@ NOTES
 - Hors sujet : refus correct.
 - Format des sources inconsistant ([clusters.md, p.1] / [source: signals.md, p.1] / [ multi-tenancy.md, p.1 ]) : à normaliser dans le prompt.
 - Hors sujet proche (Helm/Kubernetes) : refus correct, mais distances 0.147-0.158 identiques à une bonne question : un seuil de distance seul ne suffit pas.
+-Correctif prompt : refus hors corpus 1/2 -> 2/2 (3 exécutions consécutives de evaluate.py)
